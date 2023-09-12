@@ -38,11 +38,14 @@
             padding-bottom: 10px;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        img.left {
             float: left;
             margin: 0 20px 20px 0;
+        }
+
+        img.right {
+            float: right;
+            margin: 0 0 20px 20px;
         }
 
         a {
@@ -60,6 +63,14 @@
             text-align: center;
             padding: 20px 0;
             width: 100%;
+            clear: both;
+        }
+
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
     </style>
 </head>
@@ -69,23 +80,23 @@
     </header>
 
     <div class="container">
-        <section>
+        <section class="clearfix">
             <h2>History of Standard Schnauzers</h2>
-            <img src="https://www.akc.org/wp-content/uploads/2020/05/Standard-Schnauzer-standing-outdoors-500x486.jpg">
+            <img class="left" src="https://www.akc.org/wp-content/uploads/2020/05/Standard-Schnauzer-standing-outdoors-500x486.jpg">
             <p>The Standard Schnauzer is the original breed of the three breeds of Schnauzer, and despite its wiry coat and general appearance, is not related to the British terriers. Rather, its origins are in old European herding and guardian breeds.</p>
             <p>For many years, the Standard Schnauzer was called the Wire-haired Pinscher, while the German Pinscher was called the Smooth-haired Pinscher.</p>
         </section>
 
-        <section>
+        <section class="clearfix">
             <h2>Characteristics</h2>
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/Standard-Schnauzer-MP.jpg">
+            <img class="right" src="https://www.akc.org/wp-content/uploads/2017/11/Standard-Schnauzer-MP.jpg">
             <p>Standard Schnauzers are not only highly active, but they are also extremely intelligent and have a high learning capacity. Their keen senses and alertness make them the ideal watchdog.</p>
             <p>They are also known for their versatility, participating in a number of activities from hunting to performance events like agility.</p>
         </section>
 
-        <section>
+        <section class="clearfix">
             <h2>Care and Maintenance</h2>
-            <img src="https://www.groomers-online.com/images/cms/sections/1635865254-29189300.jpg">
+            <img class="left" src="https://www.groomers-online.com/images/cms/sections/1635865254-29189300.jpg">
             <p>Standard Schnauzers require regular grooming to maintain their unique coat. They also benefit from regular exercise and mental stimulation due to their high intelligence.</p>
             <p>For more information on care, check out <a href="https://www.groomers-online.com/how-to-groom-a-schnauzer-i404" target="Groomers">this dedicated Schnauzer care site</a>.</p>
         </section>
