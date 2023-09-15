@@ -1,82 +1,79 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> Benjamin Pineda | Student Page</title>
+<head>
+    <title>Benjamin Pineda | Student Page</title>
+    <style>
+        img{
+            width: auto;
+            height: 200px;
+        }
 
-        <style>
-            img{
-                width: auto;
-                height: 200px;
-            }
+        strong{
+            color:red;
+        }
 
-            strong{
-                color:red;
-            }
+        .container{
+            width: 950px;
+            margin: 0 auto;
+        }
 
-            .container{
-                width: 950px;
-                margin: 0 auto;
-            }
+        .column{
+            flex: 1;
+            padding: 10px;
+        }
 
-            .column{
-                width: 100%;
-            }
+        .flex-container {
+            display: flex;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
 
-            #first-container {
-                display:flex;
-                width: 100%;
-            }
-
-        </style>
-
+    <div class="container">
         <h1>Benjamin Pineda</h1>
-
         <p><a href="mailto:bppineda@usc.edu">bppineda@usc.edu</a></p>
-
         <hr>
 
-        <div id="first container">
+        <div id="first-container" class="flex-container">
             <div class="column">
-        <p>Favorite color: <strong>Red</strong></p>
+                <p>Favorite color: <strong>Red</strong></p>
+                <p>Favorite website: <a href="https://youtube.com">Youtube</a></p>
+                <p>Favorite activity: Soccer</p>
+                <img src="https://frontofficesports.com/wp-content/uploads/2022/11/FOS-22-11.21-World-Cup-Earners-Mbappe.jpg">
+            </div>
 
-        <p>Favorite website: <a href="https://youtube.com">Youtube Website</a></p>
-
-        <p>Favorite activity: Soccer</p>
-
-        <img src="https://frontofficesports.com/wp-content/uploads/2022/11/FOS-22-11.21-World-Cup-Earners-Mbappe.jpg">
-        </div>
-
-
-        
-        <div class="column">
-        <h2>Fall 2023 Schedule</h2>
-        <ul>
-            <li>BUAD 280: Introduction to Financial Accounting</li>
-            <li>GEOL 107: Oceanography</li>
-            <li>ITP 104: Web Publishing</li>
-            <li>ANTH 140: Mesoamerican Cosmovision and Culture</li>
-        </ul>
-        </div>
+            <div class="column">
+                <h2>Fall 2023 Schedule</h2>
+                <ul>
+                    <li>BUAD 280: Introduction to Financial Accounting</li>
+                    <li>GEOL 107: Oceanography</li>
+                    <li>ITP 104: Web Publishing</li>
+                    <li>ANTH 140: Mesoamerican Cosmovision and Culture</li>
+                </ul>
+            </div>
         </div>
 
         <hr>
 
-        <div class="second-container"
+        <div class="second-container flex-container">
             <div class="column">
-        <h3>Assignments:</h3>
-        <ul>
-            <li><a href="file:///Users/benpineda/Documents/GitHub/itp104-submissions-benjaminpineda/assignment_01/home.html">Assignment 1</a></li>
-            <li><a href="file:///Users/benpineda/Documents/GitHub/itp104-submissions-benjaminpineda/assignment_02/interests.html">Assignment 2</a></li>
-        </ul>
-    </div>
+                <h3>Assignments:</h3>
+                <ul>
+                    <li><a href="file:///Users/benpineda/Documents/GitHub/itp104-submissions-benjaminpineda/assignment_01/home.html">Assignment 1</a></li>
+                    <li><a href="file:///Users/benpineda/Documents/GitHub/itp104-submissions-benjaminpineda/assignment_02/interests.html">Assignment 2</a></li>
+                </ul>
+            </div>
 
-        <div class="column">
-        <h4>Labs:</h4>
-        <ul>
-            <li><a href="file:///Users/benpineda/Documents/GitHub/itp104-submissions-benjaminpineda/index.html">Lab 2: Student Page</a></li>
-            <li><a href="file:///Users/benpineda/Documents/GitHub/itp104-submissions-benjaminpineda/lab_03/home%20copy.html">Lab 3: Updated Resume</a></li>
-        </ul>
+            <div class="column">
+                <h4>Labs:</h4>
+                <ul>
+                    <li><a href="file:///Users/benpineda/Documents/GitHub/itp104-submissions-benjaminpineda/index.html">Lab 2: Student Page</a></li>
+                    <li><a href="file:///Users/benpineda/Documents/GitHub/itp104-submissions-benjaminpineda/lab_03/home%20copy.html">Lab 3: Updated Resume</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    </head>
+
+</body>
 </html>
