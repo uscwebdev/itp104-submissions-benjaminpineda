@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>September 2023 Calendar</title>
     <style>
-        
+        body {
+            font-family: Arial, sans-serif;
+        }
+
         .calendar {
             width: 1100px;
             margin: 0 auto;
@@ -13,9 +17,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        
         .header {
-            background-image: url(https://t4.ftcdn.net/jpg/03/67/37/01/360_F_367370175_9hiA0tBraRyrKtFYc1mObY8UGNiRqdup.jpg);
+            background-image: url('https://t4.ftcdn.net/jpg/03/67/37/01/360_F_367370175_9hiA0tBraRyrKtFYc1mObY8UGNiRqdup.jpg');
             background-size: cover;
             text-align: center;
             padding: 20px 0;
@@ -26,7 +29,6 @@
             margin: 0;
         }
 
-       
         table {
             width: 100%;
             border-collapse: collapse;
@@ -39,7 +41,6 @@
             vertical-align: top;
         }
 
-        
         .birthday {
             background-image: url('https://png.pngtree.com/png-clipart/20221224/original/pngtree-happy-birthday-text-effect-png-image_8802415.png');
             color: white;
@@ -51,67 +52,65 @@
         }
 
         .peace-day {
-            background-image: url(https://img.freepik.com/free-vector/flat-peace-day-background-with-dove_23-2148257205.jpg?w=2000);
+            background-image: url('https://img.freepik.com/free-vector/flat-peace-day-background-with-dove_23-2148257205.jpg?w=2000');
             color: white;
         }
     </style>
 </head>
+
 <body>
-<div class="calendar">
-    
-    <div class="header">
-        <h1>September 2023</h1>
+    <div class="calendar">
+        <div class="header">
+            <h1>September 2023</h1>
+        </div>
+        <table>
+            <tr>
+                <td>Sun</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+            </tr>
+            <tr>
+                <td class="other-month">29</td>
+                <td class="other-month">30</td>
+                <td class="other-month">31</td>
+                <td>1</td>
+                <td>2</td>
+                <td class="birthday">3 <br> Birthday</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td class="labor-day">11 <br> Labor Day</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>20</td>
+                <td class="peace-day">21 <br> International Peace Day</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td class="other-month">1</td>
+                <td class="other-month">2</td>
+            </tr>
+        </table>
     </div>
-
-
-    <table>
-        <tr>
-            <td>Sun</td>
-            <td>Mon</td>
-            <td>Tue</td>
-            <td>Wed</td>
-            <td>Thu</td>
-            <td>Fri</td>
-            <td>Sat</td>
-        </tr>
-        <tr>
-            <td class="other-month">29</td>
-            <td class="other-month">30</td>
-            <td class="other-month">31</td>
-            <td>1</td>
-            <td>2</td>
-            <td class="birthday">3 <br> Birthday</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td class="labor-day">11 <br> Labor Day</td>
-        </tr>
-        
-        <tr>
-            <td>19</td>
-            <td>20</td>
-            <td class="peace-day">21 <br> International Peace Day</td>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-            <td>29</td>
-            <td>30</td>
-            <td class="other-month">1</td>
-            <td class="other-month">2</td>
-        </tr>
-    </table>
-</div>
 </body>
+
 </html>
