@@ -39,21 +39,31 @@
             text-align: right;
             padding: 10px;
             vertical-align: top;
+            width: 14.2857%; 
+            box-sizing: border-box;
+            position: relative;
         }
 
-        .birthday {
+        td > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .birthday > div {
             background-image: url('https://png.pngtree.com/png-clipart/20221224/original/pngtree-happy-birthday-text-effect-png-image_8802415.png');
-            color: white;
         }
 
-        .labor-day {
+        .labor-day > div {
             background-image: url('https://t4.ftcdn.net/jpg/02/85/40/09/360_F_285400902_3MxvI4X1S78JsGNzER97OH40D7ZqV3EO.jpg');
-            color: white;
         }
 
-        .peace-day {
+        .peace-day > div {
             background-image: url('https://img.freepik.com/free-vector/flat-peace-day-background-with-dove_23-2148257205.jpg?w=2000');
-            color: white;
         }
     </style>
 </head>
@@ -79,7 +89,10 @@
                 <td class="other-month">31</td>
                 <td>1</td>
                 <td>2</td>
-                <td class="birthday">3 <br> Birthday</td>
+                <td class="birthday">
+                    <div></div>
+                    3 <br> Birthday
+                </td>
                 <td>4</td>
             </tr>
             <tr>
@@ -89,12 +102,18 @@
                 <td>8</td>
                 <td>9</td>
                 <td>10</td>
-                <td class="labor-day">11 <br> Labor Day</td>
+                <td class="labor-day">
+                    <div></div>
+                    11 <br> Labor Day
+                </td>
             </tr>
             <tr>
                 <td>19</td>
                 <td>20</td>
-                <td class="peace-day">21 <br> International Peace Day</td>
+                <td class="peace-day">
+                    <div></div>
+                    21 <br> International Peace Day
+                </td>
                 <td>22</td>
                 <td>23</td>
                 <td>24</td>
