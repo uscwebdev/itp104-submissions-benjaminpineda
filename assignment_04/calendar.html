@@ -19,13 +19,13 @@
 
         .header {
             background-image: url('https://t4.ftcdn.net/jpg/03/67/37/01/360_F_367370175_9hiA0tBraRyrKtFYc1mObY8UGNiRqdup.jpg');
-            background-size: cover;
+            background-size: 100% 100%;
             text-align: center;
             padding: 20px 0;
         }
 
         .header h1 {
-            color: white;
+            color: black;
             margin: 0;
         }
 
@@ -39,7 +39,8 @@
             text-align: right;
             padding: 10px;
             vertical-align: top;
-            width: 14.2857%; 
+            width: 14.2857%; /* 100% / 7 days */
+            height: calc(1100px / 7);
             box-sizing: border-box;
             position: relative;
         }
