@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standard Schnauzers</title>
-
     <style>
-        /* Internal CSS specific to the main page and common styles */
+        /* The styles you've provided... */
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
@@ -15,9 +15,14 @@
         }
 
         header {
+            background-size: cover;
             text-align: center;
             padding: 50px 0;
-            background-size: cover;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
         }
 
         .container {
@@ -27,7 +32,8 @@
             background-color: white;
         }
 
-        .sidebar, .content {
+        .sidebar,
+        .content {
             padding: 20px;
             box-sizing: border-box;
         }
@@ -52,12 +58,11 @@
             margin-bottom: 10px;
         }
 
-        .sidebar img:hover + p {
-            visibility: visible;
-        }
-        
-        .sidebar p {
-            visibility: hidden;
+        .caption {
+            text-align: center;
+            font-size: smaller;
+            color: #555;
+            visibility: hidden; /* hide captions by default */
         }
 
         footer {
@@ -67,6 +72,12 @@
             padding: 20px 0;
         }
 
+        /* Additional styles for hover effect */
+        .sidebar img:hover + p {
+            visibility: visible; /* show caption on hover */
+        }
+
+        /* Navigation styles */
         nav {
             background-color: #333;
             overflow: hidden;
@@ -92,6 +103,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Menu bar -->
     <nav>
@@ -99,7 +111,35 @@
         <a href="gallery.html">Gallery</a>
     </nav>
 
-    <!-- Rest of the content from your provided code -->
+    <header>
+        <h1>Standard Schnauzers</h1>
+    </header>
 
+    <div class="container">
+
+        <aside class="sidebar">
+            <img src="https://www.akc.org/wp-content/uploads/2017/11/Standard-Schnauzer-at-the-AKC-National-Championship-400x267.jpg"
+                alt="Sidebar Image 1">
+            <p class="caption">One Standard Schnauzer</p>
+            <img src="https://www.researchgate.net/publication/287995741/figure/fig5/AS:319445621854208@1453173179246/A-4-year-old-female-intact-Miniature-Schnauzer-dwarf-with-central-hypothyroidism-standing_Q320.jpg"
+                alt="Sidebar Image 2">
+            <p class="caption">Two Standard Schnauzers</p>
+        </aside>
+
+        <main class="content">
+            <section>
+                <h2>History of Standard Schnauzers</h2>
+                <img src="https://www.akc.org/wp-content/uploads/2020/05/Standard-Schnauzer-standing-outdoors-500x486.jpg">
+                <p>The Standard Schnauzer is the original breed of the three breeds of Schnauzer, and despite its wiry
+                    coat and general appearance, is not related to the British terriers.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        All about Standard Schnauzers &copy; 2023
+    </footer>
 </body>
+
 </html>
