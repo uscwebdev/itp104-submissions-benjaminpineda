@@ -1,81 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Photo Gallery</title>
 
     <style>
-       
+        /* Internal CSS specific to the gallery page and common styles */
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        /* ... (Insert the same common styles from mainpage.html here) ... */
+
+        /* Gallery specific styles */
+        header {
+            height: 50px; /* Adjust this to your preferred height */
+            background-color: #f2f2f2;
         }
 
-        .menu-bar {
+        .collage {
             display: flex;
-            justify-content: space-between;
-            padding: 10px 30px;
-            background-color: #2c3e50;
+            flex-wrap: wrap;
+            gap: 10px; /* consistent spacing between blocks */
+            max-width: 1100px;
+            margin: 20px auto;
         }
 
-        .menu-bar a {
-            text-decoration: none;
-            color: white;
-            margin: 0 15px;
-            transition: color 0.3s;
+        .collage div {
+            border: 1px solid #ccc;
+            background-color: #e4e4e4;
+            height: 150px;
         }
 
-        .menu-bar a:hover,
-        .menu-bar .active {
-            color: #3498db;
-        }
+        /* Different sizes for collage blocks */
+        .block1 { width: 50%; }
+        .block2 { width: 25%; }
+        .block3 { width: 25%; }
+        .block4, .block5 { width: 33.33%; }
+        .block6, .block7, .block8 { width: 33.33%; }
+        .block9 { width: 50%; }
+        .block10 { width: 50%; }
+    </style>
+</head>
+<body>
+    <!-- Menu bar -->
+    <nav>
+        <a href="mainpage.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+    </nav>
 
-        .header {
-            width: 100%;
-            padding: 50px;
-            text-align: center;
-            background-color: #34495e;
-            color: white;
-        }
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
 
-        .page-content {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
+    <!-- Collage layout with placeholder divs -->
+    <div class="collage">
+        <div class="block1"></div>
+        <div class="block2"></div>
+        <div class="block3"></div>
+        <div class="block4"></div>
+        <div class="block5"></div>
+        <div class="block6"></div>
+        <div class="block7"></div>
+        <div class="block8"></div>
+        <div class="block9"></div>
+        <div class="block10"></div>
+    </div>
 
-        .footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #2c3e50;
-            color: white;
-        }
-
-       
-        .header {
-            height: 150px; 
-            background-image: url(https://www.purina-arabia.com/sites/default/files/styles/ttt_image_510/public/2021-01/Schnauzer%20Standard1.jpg?itok=KavOXQ3r); 
-        }
-
-        .gallery-block {
-            border: 2px solid #2c3e50; 
-            margin: 10px;
-        }
-
-        
-        .large-block {
-            width: 300px;
-            height: 300px;
-        }
-
-        .medium-block {
-            width: 200px;
-            height: 200px;
-        }
-
-       
+    <footer>
+        All about Standard Schnauzers &copy; 2023
+    </footer>
+</body>
+</html>
