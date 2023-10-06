@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schnauzer Puzzle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            position: relative;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 33.33%; 
+            height: auto;
+        }
+
+        
+        .image-container img:nth-child(1) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-container img:nth-child(9) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Puzzle</h1>
+    <div class="image-container">
+        <img src="row-1-column-1.jpg">
+        <img src="row-1-column-2.jpg">
+        <img src="row-1-column-3.jpg">
+        <img src="row-2-column-1.jpg">
+        <img src="row-2-column-2.jpg">
+        <img src="row-2-column-3.jpg">
+        <img src="row-3-column-1.jpg">
+        <img src="row-3-column-2.jpg">
+        <img src="row-3-column-3.jpg">
+    </div>
+</body>
+</html>
