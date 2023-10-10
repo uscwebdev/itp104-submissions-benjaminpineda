@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+
+    <style>
+        header {
+            height: 50px;
+            background-color: #f2f2f2;
+        }
+
+        .collage {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 1100px;
+            margin: 20px auto;
+        }
+
+        .collage div {
+            border: 1px solid #ccc;
+            background-color: #e4e4e4;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .block1 { width: 50%; }
+        .block2 { width: 25%; }
+        .block3 { width: 25%; }
+        .block4, .block5 { width: 33.33%; }
+        .block6, .block7, .block8 { width: 33.33%; }
+        .block9, .block10 { width: 50%; }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="mainpage.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+    </nav>
+
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+
+    <div class="collage">
+        <div class="block1" style="background-image: url(https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-08/Standard-Schnauzer.jpg?itok=XSF9YF_Q);"></div>
+        <div class="block2" style="background-image: url(https://images.europuppy.com/wp-content/uploads/schnautzer-200x250.jpg);"></div>
+        <div class="block3" style="background-image: url(https://www.petlandnovi.com/wp-content/uploads/2022/06/Standard-Schnauzer.png);"></div>
+        <div class="block4" style="background-image: url(https://www.akc.org/wp-content/uploads/2017/11/Miniature-Schnauzer-puppy-laying-down.jpg);"></div>
+        <div class="block5" style="background-image: url(https://uptownpuppies.com/wp-content/themes/mega-theme/images/minischnauzeropennew.jpg);"></div>
+        <div class="block6" style="background-image: url(https://www.akc.org/wp-content/uploads/2017/11/Miniature-Schnauzer-On-White-01.jpg);"></div>
+        <div class="block7" style="background-image: url(https://www.petbarn.com.au/petspot/app/uploads/2015/01/67.-Miniature-Schnauzer.jpg);"></div>
+        <div class="block8" style="background-image: url(https://www.purina.co.nz/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0066_miniature_schnauzer.jpg?itok=ijPAuZbn);"></div>
+        <div class="block9" style="background-image: url(https://t2.ea.ltmcdn.com/en/razas/2/2/0/miniature-schnauzer_22_0_orig.jpg);"></div>
+        <div class="block10" style="background-image: url(https://images.saymedia-content.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTk2NjA2MDczMTcwMzA2ODc4/how-to-enjoy-your-schnauzer-and-eliminate-problems.jpg);"></div>
+    </div>
+
+    <footer>
+        All about Standard Schnauzers &copy; 2023
+    </footer>
+</body>
+
+</html>
