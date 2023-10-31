@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borzoi - The Russian Wolfhound</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Fun font for the header -->
     <style>
         /* Reset some default browser styles */
         body, h1, h2, p, ul, li {
@@ -23,11 +24,13 @@
         }
 
         header {
-            background-color: #333;
-            color: #f9f9f9;
+            background-color: #FF6B6B; /* Vibrant color for the header */
+            color: #fff;
             text-align: center;
             padding: 2rem 0;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+            font-family: 'Pacifico', cursive; /* Fun font for the header */
+            font-size: 2rem;
         }
 
         section {
@@ -35,12 +38,17 @@
             margin: 2rem auto;
             padding: 1rem;
             background-color: #fff;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px); /* subtle lift on hover */
         }
 
         h2 {
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px dashed #FF6B6B; /* Dashed border for fun */
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
             font-size: 1.5rem;
@@ -56,31 +64,35 @@
 
         li {
             padding: 0.5rem 0;
+            transition: color 0.3s;
+        }
+
+        li:hover {
+            color: #FF6B6B; /* Color change on hover for fun */
         }
 
         a {
-            color: #0077cc;
+            color: #FF6B6B; /* Vibrant link color */
             text-decoration: none;
             transition: color 0.3s;
         }
 
         a:hover {
-            color: #0055aa;
+            color: #FF3F3F; /* Darker shade on hover */
         }
 
         iframe {
             width: 100%;
             height: 500px;
             border: none;
-            border-radius: 5px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Borzoi - The Russian Wolfhound</h1>
-        <p>Discover the elegance and history of the Borzoi, also known as the Russian Wolfhound.</p>
+        Borzoi - The Russian Wolfhound
     </header>
 
     <!-- Audience -->
@@ -92,11 +104,11 @@
     <!-- Design & Style -->
     <section>
         <h2>Design & Style</h2>
-        <p>The design is minimalist with a neutral color palette, inspired by the elegance of the Borzoi.</p>
+        <p>The design is vibrant and playful, inspired by the lively nature of the Borzoi.</p>
         <ul>
-            <li><a href="https://inspirationwebsite1.com">Inspiration Website 1</a></li>
-            <li><a href="https://inspirationwebsite2.com">Inspiration Website 2</a></li>
-            <li><a href="https://inspirationwebsite3.com">Inspiration Website 3</a></li>
+            <li><a href="https://www.mentalfloss.com/article/83088/10-elegant-facts-about-borzoi">Inspiration Website 1</a></li>
+            <li><a href="https://dogtime.com/dog-breeds/borzoi">Inspiration Website 2</a></li>
+            <li><a href="https://www.dailypaws.com/dogs-puppies/dog-breeds/borzoi">Inspiration Website 3</a></li>
         </ul>
     </section>
 
@@ -105,7 +117,7 @@
         <h2>Scope</h2>
         <p>This is a single-page website with multiple sections dedicated to the Borzoi breed.</p>
         <ul>
-            <li>Introduction</li>
+            <li>Introduction: Have you ever seen a dog that looks like it's straight out of a fairy tale? That's probably a Borzoi. Hailing from the vast landscapes of Russia, the Borzoi, or "Russian Wolfhound", is the epitome of elegance. With a coat that flows like silk and a posture that's nothing short of regal, it's no wonder they were the favorites of Russian nobility. But don't let their refined looks fool you; these dogs were bred to chase and hunt, making them swift and powerful. Yet, at home, they're the gentlest of giants. Loyal, loving, and a tad bit lazy, a Borzoi will happily lounge with you just as much as they'd love a good run. It's this blend of grace and spirit that makes the Borzoi a truly captivating breed.</li>
             <li>History</li>
             <li>Characteristics</li>
             <li>Care & Maintenance</li>
